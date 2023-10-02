@@ -280,7 +280,7 @@ const TodoView = observer(({ todo }: { todo: Todo }) =>
        done: todo.done
    }} />
 
-   // 正确: 使用 `toJS`也是可以的, 并且是更清晰直白的方式。
+   // 正确: 使用 `toJS`也是可以的, 但是显示声明相关属性的写法通常会更好。
    return <GridRow data={toJS(todo)} />
 )
 ```
